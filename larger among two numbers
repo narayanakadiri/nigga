@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int numOne=12, numTwo=14, larg;
+if(numOne>numTwo)
+        larg = numOne;
+    else
+        larg = numTwo;
+cout<<"\nLargest = "<<larg;
+    cout<<endl;
+    return 0;
+}
