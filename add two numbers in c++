@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int first_number=22, second_number=22, sum;
+  sum = first_number + second_number;
+  cout <<sum;   
+   return 0;
+}
