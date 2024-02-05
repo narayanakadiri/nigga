@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class shape{
+    public:
+    virtual void calculate()=0;
+};
+class circle:public shape{
+    private :
+    double radius;
+    public:
+    circle(double r){
+        radius =r;
+    }
+    void calculate(){
+        double area= 3.14*radius*radius;
+        cout<<"area of circle="<<area;
+    }
+};
+class square:public shape{
+    private :
+    double side;
+    public :
+    square(double s){
+        side=s;
+    }
+    void calculate(){
+        double area=side*side;
+        cout<<"\narea of square="<<area;
+}};
+int main(){
+    shape* shape;
+    circle circle(5.0);
+    square square(4.0);
+    shape=&circle;
+    shape->calculate();
+    shape=&square;
+    shape->calculate();
+    return 0;
+}
