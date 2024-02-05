@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+class Chef {
+public:
+    int serve(int X, int Y) {
+        X=X;
+        Y=Y;
+        return Y / X;
+    }
+};
+
+ int main(){
+    Chef chef1;
+    int X,Y;
+    cin>>X>>Y;
+    chef1.serve(X,Y);
+    return 0;
+ }   
