@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class chef{
+    private:
+    int x,y;
+    public:
+    chef(int x,int y){
+        this->x=x;
+        this->y=y;
+    }
+    void check(){
+        if(y>x){
+            cout<<"yes"<<endl;
+        }
+        else{
+            cout<<"no"<<endl;
+        }
+    }
+};
+int main() {
+   int x,y;
+   cin>>x>>y;
+   chef chef(x,y);
+   chef.check();
+    return 0;
+}
