@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// overloaded functions
+
 void test(int);
 void test(float);
 void test(int, float);
