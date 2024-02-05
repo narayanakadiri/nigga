@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Base class: Student
+
 class Student {
 protected:
     string name;
@@ -23,7 +23,7 @@ public:
     }
 };
 
-// Derived class: Report
+
 class Report : public Student {
 private:
     float marks;
