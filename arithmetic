@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+class Arithmetic {
+private:
+    int num1;
+    int num2;
+
+public:
+    Arithmetic(int n1, int n2) {
+        num1 = n1;
+        num2 = n2;
+    }
+
+    int add() {
+        return num1 + num2;
+    }
+
+    int subtract() {
+        return num1 - num2;
+    }
+
+    int multiply() {
+        return num1 * num2;
+    }
+
+    int divide() {
+        return num1 / num2;
+    }
+};
+
+int main() {
+    int num1, num2;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    Arithmetic arithmetic(num1, num2);
+
+cout << "Sum: " << arithmetic.add() << endl;
+cout << "Difference: " << arithmetic.subtract() << endl;
+cout << "Product: " << arithmetic.multiply() << endl;
+cout << "Quotient: " << arithmetic.divide() << endl;
+
+    return 0;
+}
