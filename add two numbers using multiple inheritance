@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class num1{
+    protected:
+    int num1;
+public:
+    void setnum1(int n) {
+        num1 = n;
+    }
+};
+class num2{
+    protected :
+    int num2;
+    public:
+    void setnum2(int n){
+        num2=n;
+    }
+};
+class add:public num1,public num2{
+    public:
+    int sum(){
+    return num1+num2;
+        
+    }
+};
+int main(){
+    add bob;
+    bob.setnum1(5);
+    bob.setnum2(10);
+    cout<<"sum="<<bob.sum()<<endl;
+    return 0;
+}
