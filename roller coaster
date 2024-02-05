@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class roller{
+	private:
+		int num;
+		int speed;
+		bool run;
+		public:
+			roller(){
+			
+			num=0;
+			speed=0;
+			run=false;}
+			void start(){
+				run=true;
+				cout<<"start roller coaster"<<endl;
+			}
+			void stop(){
+				run=false;
+				cout<<"stop the rollercoaster"<<endl;
+			}
+			void acc(int speed1){
+				speed-=speed1;
+				cout<<"roller coaster going at"<<speed<<endl;
+				
+			}
+			void deacc(int speed1){
+				speed+=speed1; 
+				cout<<"roller coaster coming at"<<speed<<endl;
+				
+			}
+			
+};
+int main(){
+	roller roll;
+	roll.start();
+	roll.stop();
+	roll.acc(50);
+	roll.deacc(20);
+	return 0;
+}
