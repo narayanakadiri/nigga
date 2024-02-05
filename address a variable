@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+class saale{
+    public:
+    int x;
+};
+int main(){
+    saale vis;
+    vis.x=43;
+    cout<<" address of variable is= "<<vis.x<<endl;
+    return 0;
+}
